@@ -28,9 +28,9 @@ ul {
   display: grid;
   position: relative;
   left: -70px;
-  gap: 10px;
+  gap: 20px;
   grid-template-columns: repeat(2, 500px);
-  grid-template-rows: repeat(2, 450px);
+  grid-template-rows: repeat(2, 480px);
 }
 .prison input[maxlength="1"] {
   width: 1ch;
