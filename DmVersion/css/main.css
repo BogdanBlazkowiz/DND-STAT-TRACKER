@@ -2,6 +2,12 @@
 body {
   font-family: "Space Mono";
 }
+body input[type=text] {
+  font-family: "Space Mono";
+}
+body textarea {
+  font-family: "Space Mono";
+}
 
 ul {
   list-style: none;
@@ -22,6 +28,7 @@ ul {
   display: grid;
   position: relative;
   left: -70px;
+  gap: 10px;
   grid-template-columns: repeat(2, 500px);
   grid-template-rows: repeat(2, 450px);
 }
@@ -45,7 +52,7 @@ ul {
 }
 
 .cell {
-  transform: scale(0.75);
+  transform: scale(0.8);
   position: relative;
   border: 1px solid black;
   width: 600px;
