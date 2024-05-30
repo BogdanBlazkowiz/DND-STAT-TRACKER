@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><span>Simple DnD Stat Tracker</span></header>
+    <div class="import">
+        <input type="file" id="selectFiles" value="Import" />
+        <button id="import">Import</button>
+        <button id="download">Download</button>
+    </div>
+    <div class="prison">
+        <div class="cell">
+            <div class="head-char">
+                <div class="name">
+                    <p>Name: <input id="name" type="text" maxlength="100"></p>
+                </div>
+                <div class="long-rest">
+                    <span>Long rest</span>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="level">
+                    <p>Level: <input id= "level" type="text" maxlength="2"> Exp: <input id="exp" type="text" maxlength="4"></p>
+                </div>
+                <div class="health">
+                    <p>Health: <input id="life" type="text" maxlength="3"> / <input id="lifeMax" type="text" maxlength="3"></p>
+                </div>
+                <div class="AC">
+                    <span>AC: </span><input id="ac" type="text" maxlength="2">
+                </div>
+            </div>
+            <div class="ability-scores">
+                <span>Ability Score:</span>
+                <ul>
+                    <li>
+                        <div>
+                            <div class="actual">Str Mod:<input id="strS" type="text" maxlength="2"></div>
+                            <div class="save">Saving Throw:<input id="strT" type="text" maxlength="2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="actual">Dex Mod:<input id="dexS" type="text" maxlength="2"></div>
+                            <div class="save">Saving Throw:<input id="dexT" type="text" maxlength="2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="actual">Con Mod:<input id="conS" type="text" maxlength="2"></div>
+                            <div class="save">Saving Throw:<input id="conT" type="text" maxlength="2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="actual">Int Mod:<input id="intS" type="text" maxlength="2"></div>
+                            <div class="save">Saving Throw:<input id="intT" type="text" maxlength="2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="actual">Wis Mod:<input id="wisS" type="text" maxlength="2"></div>
+                            <div class="save">Saving Throw:<input id="wisT" type="text" maxlength="2"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="actual">Cha Mod:<input id="chaS" type="text" maxlength="2"></div>
+                            <div class="save">Saving Throw:<input id="chaT" type="text" maxlength="2"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="spell-slots">
+                <span>Spell Slots:</span>
+                <ul>
+                    <li>Lvl 1: <input id="sp1C" type="text" maxlength="1"> / <input id="sp1M" type="text" maxlength="1"></li>
+                    <li>Lvl 2: <input id="sp2C" type="text" maxlength="1"> / <input id="sp2M" type="text" maxlength="1"></li>
+                    <li>Lvl 3: <input id="sp3C" type="text" maxlength="1"> / <input id="sp3M" type="text" maxlength="1"></li>
+                    <li>Lvl 4: <input id="sp4C" type="text" maxlength="1"> / <input id="sp4M" type="text" maxlength="1"></li>
+                    <li>Lvl 5: <input id="sp5C" type="text" maxlength="1"> / <input id="sp5M" type="text" maxlength="1"></li>
+                    <li>Lvl 6: <input id="sp6C" type="text" maxlength="1"> / <input id="sp6M" type="text" maxlength="1"></li>
+                    <li>Lvl 7: <input id="sp7C" type="text" maxlength="1"> / <input id="sp7M" type="text" maxlength="1"></li>
+                    <li>Lvl 8: <input id="sp8C" type="text" maxlength="1"> / <input id="sp8M" type="text" maxlength="1"></li>
+                    <li>Lvl 9: <input id="sp9C" type="text" maxlength="1"> / <input id="sp9M" type="text" maxlength="1"></li>
+                </ul>
+            </div>
+            <div class="spell-attack">
+                <div class="roll">
+                    <span>Spell Attack Roll: </span><input id="spAttRoll" type="text" maxlength="2">
+                </div>
+                <div class="dc">
+                    <span>Spell Save DC: </span><input id="spSavDc" type="text" maxlength="2">
+                </div>
+            </div>
+            <div class="attacks">
+                <div class="attack">
+                    <span>Name: </span> <input id="name1" type="text" maxlength="12">
+                    <span>Roll: </span> <input id="roll1" type="text" maxlength="3">
+                    <span>Damage: </span> <input id="dam1" type="text" maxlength="12">
+                </div>
+                <div class="attack">
+                    <span>Name: </span> <input id="name2" type="text" maxlength="12">
+                    <span>Roll: </span> <input id="roll2" type="text" maxlength="3">
+                    <span>Damage: </span> <input id="dam2" type="text" maxlength="12">
+                </div>
+                <div class="attack">
+                    <span>Name: </span> <input id="name3" type="text" maxlength="12">
+                    <span>Roll: </span> <input id="roll3" type="text" maxlength="3">
+                    <span>Damage: </span> <input id="dam3" type="text" maxlength="12">
+                </div>
+            </div>
+            <div class="misc">
+                <span>Other: </span><br>
+                <textarea id="other" name="misc"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>
