@@ -1,5 +1,7 @@
 # DND-STAT-TRACKER
 
+Extremely basic information tracker, made it back before I learned about mongoDb and databases in general, so the storing of the information is clunky.
+
 ## Why?
 Got tired of notepad
 
